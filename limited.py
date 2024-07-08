@@ -14,7 +14,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from . import ultroid_cmd
 
 
-@ultroid_cmd(pattern="limited$")
+@ultroid_cmd(pattern="limit$")
 async def demn(ult):
     chat = "@SpamBot"
     msg = await ult.eor("Checking If You Are Limited...")
