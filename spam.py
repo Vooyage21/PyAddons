@@ -40,7 +40,7 @@ async def tmeme(e):
 async def spammer(e):
     message = e.text
     if e.reply_to:
-        if not len(message.split()) >= 2:
+        if not len(message.split()) >= 1:
             return await eod(e, "`Use in Proper Format`")
         spam_message = await e.get_reply_message()
     else:
